@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Table from "components/Table";
-import { TableHeaderText } from "components/tableHeaderText";
-import AddCarForm from "components/form";
-import Header from "components/header";
-import Footer from "components/footer";
-import WelcomeText from "components/welcomeText";
+import { TableHeaderText } from "components/TableHeaderText";
+import AddCarForm from "components/Form";
+import Header from "components/Header";
+import { Footer } from "components/Footer";
+import WelcomeText from "components/WelcomeText";
 import { useSelector, useDispatch } from "react-redux";
 
 import styled from "styled-components";

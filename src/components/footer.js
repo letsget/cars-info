@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { CURRENT_YEAR } from '../constants';
 
 const FooterContent = styled.footer`
   background: #282d30;
@@ -21,7 +22,7 @@ const Footer = () => {
       <span>
         <p>
           <span style={{ textTransform: "uppercase" }}>
-            © 2020 CAPTAIN QUACK
+            © {CURRENT_YEAR} CAPTAIN QUACK
           </span>
           <br /> Десница тысячелетия и моллюск!
         </p>
@@ -30,4 +31,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export {Footer};

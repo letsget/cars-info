@@ -13,9 +13,11 @@ function carsReducer(state = initialState, {type, payload}) {
        }
     // case ADD_NEW_CAR:
     //   return [...state, payload];
-    // case REMOVE_CAR:
-    //   state = state.filter((car) => car.id !== payload.id);
-    //   return state;
+    case REMOVE_CAR:
+       return {
+         ...state,
+         cars: state.cars.filter(car => car.id !== payload.id),
+       }
 
     default:
       return state;

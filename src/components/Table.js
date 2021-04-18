@@ -1,10 +1,14 @@
 import React from "react";
-import TableHeader from "./table-header";
-import {TableBody} from "./tableBody";
+import { TableHeader } from "./Table-header";
+import { useSelector } from "react-redux";
+import { TableBody } from "./TableBody";
 
 const Table = ({ colors }) => {
+  const cars = useSelector(({ app: cars }) => cars);
+  console.log('1111111', cars);
+
   return (
-    <table className="table table-hover">
+ <table className="table table-hover">
       <TableHeader />
       <TableBody colors={colors} />
     </table>

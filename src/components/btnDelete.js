@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { connect } from "react-redux";
-import { removeCar } from "../actions";
+import {useDispatch} from 'react-redux';
+import { removeCar } from "actions";
 
 const DeleteBtn = styled.button`
   padding: 10px 15px;
@@ -21,20 +21,12 @@ const DeleteBtn = styled.button`
   }
 `;
 
-const BtnDelete = ({ id, deleteCar }) => {
-  const handleRemove = (id) => deleteCar(id);
+const BtnDelete = ({ id }) => {
+  const dispatch = useDispatch();
 
-  return <DeleteBtn onClick={() => handleRemove(id)}>Удалить</DeleteBtn>;
+ const handleRemove = () => dispatch(removeCar(id));
+
+  return <DeleteBtn onClick={handleRemove}>Удалить</DeleteBtn>;
 };
 
-const mapStateToProps = (state) => {
-  return {
-    cars: state,
-  };
-};
-
-const mapDispatchToProps = {
-  deleteCar: removeCar,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(BtnDelete);
+export { BtnDelete };

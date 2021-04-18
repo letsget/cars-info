@@ -1,29 +1,17 @@
 import React from "react";
-import { connect } from "react-redux";
+import {TABLE_HEADER_TITLES} from '../constants';
 
-const tableHeaderTitles = ["Название", "год", "цвет", "статус", "цена"];
-
-const TableHeader = ({ cars }) => {
-  if (cars.length) {
-    return (
-      <thead>
-        <tr>
-          {tableHeaderTitles.map((title, index) => (
-            <th key={index}>{title}</th>
-          ))}
-          <th></th>
-        </tr>
-      </thead>
-    );
-  } else {
-    return null;
-  }
+const TableHeader = () => {
+  return (
+    <thead>
+      <tr>
+        {TABLE_HEADER_TITLES.map((title, index) => (
+          <th key={index}>{title}</th>
+        ))}
+        <th></th>
+      </tr>
+    </thead>
+  );
 };
 
-const mapState = (state) => {
-  return {
-    cars: state,
-  };
-};
-
-export default connect(mapState)(TableHeader);
+export { TableHeader };

@@ -1,8 +1,8 @@
 import { addCar } from "../actions";
 import * as Yup from "yup";
-import Button from "./button";
-import Select from "./select";
-import ColorSelect from "./colorSelect";
+import { Button } from "./Button";
+import Select from "./Select";
+import ColorSelect from "./ColorSelect";
 import React from "react";
 import { Formik, useFormik, Form, ErrorMessage } from "formik";
 import { connect } from "react-redux";

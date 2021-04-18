@@ -1,19 +1,14 @@
 import Axios from "axios";
 const { REACT_APP_API_URL } = process.env;
 
-// actions
 export const CARS_LOADED_SUCCESS = "CARS_LOADED_SUCCESS";
 export const ADD_NEW_CAR = "ADD_NEW_CAR";
 export const REMOVE_CAR = "REMOVE_CAR";
-
-// action creators
-
 
 export const carsLoaded = (data) => ({
   type: CARS_LOADED_SUCCESS,
   payload: data,
 })
-
 
 export const addCar = (id, title, description, year, color, status, price) => {
   return {
@@ -30,13 +25,10 @@ export const addCar = (id, title, description, year, color, status, price) => {
   };
 };
 
-export const removeCar = (id) => {
-  return {
-    type: REMOVE_CAR,
-    payload: { id },
-  };
-};
-
+export const removeCar = (id) => ({
+  type: REMOVE_CAR,
+  payload: { id },
+})
 
 export const loadCarsAsync = async (dispatch) => {
   try {
