@@ -4,12 +4,12 @@ import { applyMiddleware, createStore } from "redux";
 // import reducers from "./reducers/";
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 
-import { carsReducer } from 'reducers';
+import { rootReducer } from 'reducers';
 
 const middleware = [thunk];
 
 const store = createStore(
-  carsReducer,
+  rootReducer,
   composeWithDevTools(applyMiddleware(...middleware))
 );
 
