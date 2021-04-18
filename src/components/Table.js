@@ -4,14 +4,14 @@ import { useSelector } from "react-redux";
 import { TableBody } from "./TableBody";
 
 const Table = ({ colors }) => {
-  const cars = useSelector(({ app: cars }) => cars);
-  console.log('1111111', cars);
+  const cars = useSelector(({ app: { cars } }) => cars);
+  console.log("1111111", cars);
 
   return (
- <table className="table table-hover">
+    cars.length ? <table className="table table-hover">
       <TableHeader />
       <TableBody colors={colors} />
-    </table>
+    </table> : null
   );
 };
 
