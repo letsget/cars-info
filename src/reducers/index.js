@@ -17,4 +17,4 @@ function carsReducer(state = initialState, action) {
   }
 }
 
-export default carsReducer;
+export {carsReducer};
