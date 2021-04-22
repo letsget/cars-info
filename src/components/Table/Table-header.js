@@ -1,5 +1,5 @@
 import React from "react";
-import {TABLE_HEADER_TITLES} from '../constants';
+import {TABLE_HEADER_TITLES} from '../../constants';
 
 const TableHeader = () => {
   return (

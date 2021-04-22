@@ -1,9 +1,9 @@
 import React from "react";
-import { BtnDelete } from "./BtnDelete";
+import { BtnDelete } from "../Buttons/BtnDelete";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
 import { formatNumber, formatStatus } from "utils";
-import { COLORS } from "../constants";
+import { COLORS } from "../../constants";
 
 const Circle = styled.span`
   width: 20px;

@@ -10,4 +10,14 @@ export const COLORS = {
   green: "#88c504",
 };
 
+export const COLOR_OPTIONS = [
+  { color: "#fff" },
+  { color: "#000" },
+  { color: "#cbcbcc" },
+  { color: "#d74345" },
+  { color: "#88c504" },
+];
+
+export const STATUS_OPTIONS = ["в наличии", "ожидается", "нет в наличии"];
+
 

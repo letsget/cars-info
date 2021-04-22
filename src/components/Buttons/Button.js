@@ -15,10 +15,10 @@ const Btn = styled.button`
     padding-left: 7px;
   }
 `;
-const Button = () => {
+const Button = ({type}) => {
   return (
     <div className="form-group col-md-4">
-      <Btn type="submit" className="btn">
+      <Btn type={type} className="btn">
         отправить
         <i className="fas fa-chevron-right" />
       </Btn>

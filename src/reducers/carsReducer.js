@@ -11,8 +11,11 @@ function carsReducer(state = initialState, {type, payload}) {
          ...state,
          cars: payload,
        }
-    // case ADD_NEW_CAR:
-    //   return [...state, payload];
+    case ADD_NEW_CAR:
+      return {
+        ...state,
+        cars: state.cars.concat(payload.data),
+      }
     case REMOVE_CAR:
        return {
          ...state,

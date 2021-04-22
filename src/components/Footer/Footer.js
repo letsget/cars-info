@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { CURRENT_YEAR } from '../constants';
+import { CURRENT_YEAR } from '../../constants';
 
 const FooterContent = styled.footer`
   background: #282d30;

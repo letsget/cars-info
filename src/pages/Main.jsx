@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Table from "components/Table";
-import { TableHeaderText } from "components/TableHeaderText";
-import AddCarForm from "components/Form";
-import Header from "components/Header";
-import { Footer } from "components/Footer";
-import WelcomeText from "components/WelcomeText";
+import Table from "components/Table/Table";
+import { TableHeaderText } from "components/Table/TableHeaderText";
+import AddCarForm from "components/AddCarForm/Form";
+import Header from "components/Header/Header";
+import { Footer } from "components/Footer/Footer";
+import WelcomeText from "components/WelcomeText/WelcomeText";
 import { useSelector, useDispatch } from "react-redux";
 
 import styled from "styled-components";
-import "../App.css";
+import "App.css";
 import { loadCarsAsync } from "actions";
 
 const Content = styled.div`
