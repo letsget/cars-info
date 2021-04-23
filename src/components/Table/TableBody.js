@@ -32,7 +32,7 @@ const TableBody = () => {
               <td className="align-middle">
                 <Circle
                   style={{
-                    backgroundColor: COLORS[`${color}`],
+                    backgroundColor: COLORS[`${color}`] || color,
                   }}
                 />
               </td>
