@@ -18,6 +18,9 @@ export const textInput = ({
         type={type}
         placeholder={label}
       />
+    {meta.error && meta.touched && !meta.active && (
+        <div className="feedback-text error-text">{meta.error}</div>
+      )}
     </div>
   );
 };

@@ -1,0 +1,1 @@
+export const required = (value) => (value ? undefined : "Поле не может быть пустым");
