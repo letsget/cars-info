@@ -2,7 +2,7 @@ import React from "react";
 import { addCar } from "../../actions";
 import { Button } from "../Buttons/Button";
 import {useDispatch} from 'react-redux';
-import {required} from "../../validation";
+import {required, yearFormatter} from "../../validation";
 import { Field, reduxForm, reset } from "redux-form";
 import { textInput, customSelect, customRadioField} from "fields";
 import { STATUS_OPTIONS, COLOR_OPTIONS } from "../../constants";
@@ -30,31 +30,32 @@ const AddCarForm = ({ handleSubmit, values }) => {
           type="text"
           name="title"
           component={textInput}
-          minLength={3}
+          validate={[required]}
           maxLength={20}
-          validate={required}
           inputclasses={"form-control"}
           blockClasses={"form-group col-md-4"}
           label={"название"}
         />
         <Field
-          type="number"
+          type="text"
           name="year"
-          maxLength={4}
           component={textInput}
           validate={required}
+          format={yearFormatter}
           inputclasses={"form-control"}
           blockClasses={"form-group col-md-4"}
+          maxLength={4}
+          minLength={4}
           label="Год"
         />
         <Field
           type="number"
           name="price"
           component={textInput}
-          maxLength={20}
           validate={required}
           inputclasses={"form-control"}
           blockClasses={"form-group col-md-4"}
+          max={999999999}
           label="Цена"
         />
       </div> 
@@ -66,6 +67,7 @@ const AddCarForm = ({ handleSubmit, values }) => {
           validate={required}
           inputclasses={"form-control"}
           blockClasses={"form-group col-md-12"}
+          maxLength={60}
           label="Описание"
         />
       </div>

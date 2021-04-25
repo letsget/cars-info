@@ -9,6 +9,7 @@ export const textInput = ({
   meta,
   blockClasses,
   inputclasses,
+  maxLength,
 }) => {
   return (
     <div className={blockClasses}>
@@ -17,6 +18,7 @@ export const textInput = ({
         {...input}
         type={type}
         placeholder={label}
+        maxLength={maxLength}
       />
     {meta.error && meta.touched && !meta.active && (
         <div className="feedback-text error-text">{meta.error}</div>

@@ -22,13 +22,20 @@ const Main = () => {
     dispatch(loadCarsAsync);
   }, [dispatch]);
 
+  const getInitialValues = () => {
+    return {
+      year: "",
+      color: "#fff",
+    };
+  };
+
   return (
     <>
       <Header />
       <div className="container">
         <WelcomeText />
         <Content>
-          <AddCarForm />
+          <AddCarForm initialValues={getInitialValues()} />
           <TableHeaderText />
           <Table />
         </Content>
