@@ -1,20 +1,11 @@
-import { ADD_NEW_CAR, CARS_LOADED_SUCCESS, REMOVE_CAR } from "../actions";
+import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
 
-const initialState = [];
+import { carsReducer } from './carsReducer';
 
-function carsReducer(state = initialState, action) {
-  switch (action.type) {
-    case CARS_LOADED_SUCCESS:
-      return (state = action.payload);
-    case ADD_NEW_CAR:
-      return [...state, action.payload];
-    case REMOVE_CAR:
-      state = state.filter((car) => car.id !== action.payload.id);
-      return state;
+const rootReducer = combineReducers({
+  app: carsReducer,
+  form: formReducer,
+});
 
-    default:
-      return state;
-  }
-}
-
-export default carsReducer;
+export { rootReducer };

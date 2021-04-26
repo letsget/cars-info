@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Text = styled.h2`
   text-transform: uppercase;
@@ -22,7 +22,8 @@ const Text = styled.h2`
   }
 `;
 
-const TableHeaderText = ({ cars }) => {
+const TableHeaderText = () => {
+  const cars = useSelector(({ app: { cars } }) => cars);
   if (cars.length) {
     return <Text>Автомобили в наличии</Text>;
   } else {
@@ -30,10 +31,4 @@ const TableHeaderText = ({ cars }) => {
   }
 };
 
-const mapState = (state) => {
-  return {
-    cars: state,
-  };
-};
-
-export default connect(mapState)(TableHeaderText);
+export { TableHeaderText };

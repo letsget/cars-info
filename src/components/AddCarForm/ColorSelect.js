@@ -23,11 +23,6 @@ const Circle = styled.button`
   }
 `;
 
-const ColorTitle = styled.h2`
-  font-size: 12px;
-  color: #999999;
-`;
-
 const ColorSelect = ({ colorOptions, setColorOption, value, renderActive }) => {
   return (
     <div className="form-group col-md-4">
