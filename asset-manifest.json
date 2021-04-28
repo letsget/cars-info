@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c707c9f.chunk.css",
-    "main.js": "/static/js/main.dae39a58.chunk.js",
-    "main.js.map": "/static/js/main.dae39a58.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b91b3eea.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b91b3eea.js.map",
-    "static/css/2.829c9cb5.chunk.css": "/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.7e4225ba.chunk.js": "/static/js/2.7e4225ba.chunk.js",
-    "static/js/2.7e4225ba.chunk.js.map": "/static/js/2.7e4225ba.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ac4cefbf10fa0d73f3c70044b45a34cf.js": "/precache-manifest.ac4cefbf10fa0d73f3c70044b45a34cf.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.829c9cb5.chunk.css.map": "/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.4c707c9f.chunk.css.map": "/static/css/main.4c707c9f.chunk.css.map",
-    "static/js/2.7e4225ba.chunk.js.LICENSE.txt": "/static/js/2.7e4225ba.chunk.js.LICENSE.txt"
+    "main.css": "/cars-info/static/css/main.4c707c9f.chunk.css",
+    "main.js": "/cars-info/static/js/main.dae39a58.chunk.js",
+    "main.js.map": "/cars-info/static/js/main.dae39a58.chunk.js.map",
+    "runtime-main.js": "/cars-info/static/js/runtime-main.8c2d6723.js",
+    "runtime-main.js.map": "/cars-info/static/js/runtime-main.8c2d6723.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/cars-info/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.79420a3f.chunk.js": "/cars-info/static/js/2.79420a3f.chunk.js",
+    "static/js/2.79420a3f.chunk.js.map": "/cars-info/static/js/2.79420a3f.chunk.js.map",
+    "index.html": "/cars-info/index.html",
+    "precache-manifest.9ba787f47b7d0f9a4c5f5d6038de6be6.js": "/cars-info/precache-manifest.9ba787f47b7d0f9a4c5f5d6038de6be6.js",
+    "service-worker.js": "/cars-info/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/cars-info/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.4c707c9f.chunk.css.map": "/cars-info/static/css/main.4c707c9f.chunk.css.map",
+    "static/js/2.79420a3f.chunk.js.LICENSE.txt": "/cars-info/static/js/2.79420a3f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b91b3eea.js",
+    "static/js/runtime-main.8c2d6723.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.7e4225ba.chunk.js",
+    "static/js/2.79420a3f.chunk.js",
     "static/css/main.4c707c9f.chunk.css",
     "static/js/main.dae39a58.chunk.js"
   ]
