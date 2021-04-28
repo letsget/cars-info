@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Table from "components/Table/Table";
 import { TableHeaderText } from "components/Table/TableHeaderText";
 import AddCarForm from "components/AddCarForm/Form";
 import Header from "components/Header/Header";
 import { Footer } from "components/Footer/Footer";
 import WelcomeText from "components/WelcomeText/WelcomeText";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import styled from "styled-components";
 import "App.css";
@@ -25,6 +25,7 @@ const Main = () => {
   const getInitialValues = () => {
     return {
       year: "",
+      price: "",
       color: "#fff",
     };
   };

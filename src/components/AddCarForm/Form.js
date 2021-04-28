@@ -1,30 +1,27 @@
 import React from "react";
 import { addCar } from "../../actions";
 import { Button } from "../Buttons/Button";
-import {useDispatch} from 'react-redux';
-import {required, yearFormatter} from "../../validation";
+import { useDispatch } from "react-redux";
+import { required, yearFormatter } from "../../validation";
 import { Field, reduxForm, reset } from "redux-form";
-import { textInput, customSelect, customRadioField} from "fields";
+import { textInput, customSelect, customRadioField } from "fields";
 import { STATUS_OPTIONS, COLOR_OPTIONS } from "../../constants";
-import {v4 as uuid} from 'uuid';
-
-
+import { v4 as uuid } from "uuid";
 
 const AddCarForm = ({ handleSubmit, values }) => {
-  const dispatch = useDispatch()
-  
+  const dispatch = useDispatch();
 
-  const afterSubmit = ( values ) => {
-     const data = {
-       id: uuid(),
-       ...values,
-     }
-     dispatch(addCar(data));
-     dispatch(reset("addCar"));
-   };
+  const afterSubmit = (values) => {
+    const data = {
+      id: uuid(),
+      ...values,
+    };
+    dispatch(addCar(data));
+    dispatch(reset("addCar"));
+  };
 
   return (
-    <form onSubmit={handleSubmit(afterSubmit, values )}>
+    <form onSubmit={handleSubmit(afterSubmit, values)}>
       <div className="form-row">
         <Field
           type="text"
@@ -49,17 +46,18 @@ const AddCarForm = ({ handleSubmit, values }) => {
           label="Год"
         />
         <Field
-          type="number"
+          type="text"
           name="price"
           component={textInput}
           validate={required}
+          format={yearFormatter}
           inputclasses={"form-control"}
           blockClasses={"form-group col-md-4"}
-          max={999999999}
+          maxLength={20}
           label="Цена"
         />
-      </div> 
-       <div className="form-row">
+      </div>
+      <div className="form-row">
         <Field
           type="text"
           name="description"

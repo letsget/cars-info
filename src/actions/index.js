@@ -10,14 +10,10 @@ export const carsLoaded = (data) => ({
   payload: data,
 });
 
-export const addCar = (data) => {
-  return {
-    type: ADD_NEW_CAR,
-    payload: {
-      data,
-    },
-  };
-};
+export const addCar = (data) => ({
+  type: ADD_NEW_CAR,
+  payload: { data },
+});
 
 export const removeCar = (id) => ({
   type: REMOVE_CAR,
