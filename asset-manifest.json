@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cars-info/static/css/main.4c707c9f.chunk.css",
-    "main.js": "/cars-info/static/js/main.a78517b0.chunk.js",
-    "main.js.map": "/cars-info/static/js/main.a78517b0.chunk.js.map",
+    "main.js": "/cars-info/static/js/main.ccb77a65.chunk.js",
+    "main.js.map": "/cars-info/static/js/main.ccb77a65.chunk.js.map",
     "runtime-main.js": "/cars-info/static/js/runtime-main.8c2d6723.js",
     "runtime-main.js.map": "/cars-info/static/js/runtime-main.8c2d6723.js.map",
     "static/css/2.829c9cb5.chunk.css": "/cars-info/static/css/2.829c9cb5.chunk.css",
     "static/js/2.2f87715b.chunk.js": "/cars-info/static/js/2.2f87715b.chunk.js",
     "static/js/2.2f87715b.chunk.js.map": "/cars-info/static/js/2.2f87715b.chunk.js.map",
     "index.html": "/cars-info/index.html",
-    "precache-manifest.d036beb3ffa63b9ea58c2f44ac4f0633.js": "/cars-info/precache-manifest.d036beb3ffa63b9ea58c2f44ac4f0633.js",
+    "precache-manifest.7ed57f6d1e1698cdca9ec072568460ef.js": "/cars-info/precache-manifest.7ed57f6d1e1698cdca9ec072568460ef.js",
     "service-worker.js": "/cars-info/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/cars-info/static/css/2.829c9cb5.chunk.css.map",
     "static/css/main.4c707c9f.chunk.css.map": "/cars-info/static/css/main.4c707c9f.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.2f87715b.chunk.js",
     "static/css/main.4c707c9f.chunk.css",
-    "static/js/main.a78517b0.chunk.js"
+    "static/js/main.ccb77a65.chunk.js"
   ]
 }

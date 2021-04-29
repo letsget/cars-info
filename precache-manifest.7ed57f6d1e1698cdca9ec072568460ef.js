@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6bbd3f3f5109638d844cd5b2373ea29",
+    "revision": "536e2dc971c2835b1e74b11f269698a0",
     "url": "/cars-info/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cars-info/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "c119da1debf690b449f9",
+    "revision": "ec4a676af1de041c9020",
     "url": "/cars-info/static/css/main.4c707c9f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cars-info/static/js/2.2f87715b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c119da1debf690b449f9",
-    "url": "/cars-info/static/js/main.a78517b0.chunk.js"
+    "revision": "ec4a676af1de041c9020",
+    "url": "/cars-info/static/js/main.ccb77a65.chunk.js"
   },
   {
     "revision": "65913d437db9da222bb1",
