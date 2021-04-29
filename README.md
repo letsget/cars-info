@@ -10,4 +10,4 @@ The functionality is simple:
 - Using Redux for all actions in the app
 - The functionality cannot be more simple, there's not much to talk about
 
-#### [View Demo]:(https://letsget.github.io/cars-info/)
+#### [View Demo](https://letsget.github.io/cars-info/)
