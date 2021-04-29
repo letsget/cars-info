@@ -23,10 +23,8 @@ export const removeCar = (id) => ({
 export const loadCarsAsync = async (dispatch) => {
   try {
     const { data } = await Axios.get(REACT_APP_API_URL);
-    console.log("cars", data);
     dispatch(carsLoaded(data));
   } catch (e) {
-    console.log("словили ошибку");
     console.log(e?.message || e?.body || e?.response || e);
   }
 };
